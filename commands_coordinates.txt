@@ -1,0 +1,36 @@
+For running the scripts for geocoding of field 1:
+
+Step 1:
+
+Navigate to the following path "<Your_system_specific_path>/code/F1/for_cities_coordinates/cities_countries.py"
+
+Run the following command:
+
+
+python cities_countries.py ../../../data/data_for_coordinates/field1.txt ../../../data/data_for_coordinates/field1_cities.csv
+
+
+Step 2:
+
+Then run this command:
+
+python cities.py ../../../data/data_for_coordinates/field1_cities.csv ../../../data/data_for_coordinates/field1_coordinates.csv
+
+
+For running the scripts for geocoding of field 2:
+
+Step 1:
+
+Navigate to the following path "<Your_system_specific_path>/code/F2/for_cities_coordinates/cities_countries.py"
+
+Run the following command:
+
+
+python cities_countries.py ../../../data/data_for_coordinates/field2.txt ../../../data/data_for_coordinates/field2_cities.csv
+
+
+Step 2:
+
+Then run this command:
+
+python cities.py ../../../data/data_for_coordinates/field2_cities.csv ../../../data/data_for_coordinates/field2_coordinates.csv

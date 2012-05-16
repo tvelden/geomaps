@@ -4,8 +4,6 @@ import re
 import math
 from pylab import *
 
-from googlemaps import GoogleMaps
-gmaps=GoogleMaps(api_key='')
 denom=0
 filename=sys.argv[1]
 fi=open(filename,'rb')
@@ -25,29 +23,6 @@ for row in reader:
         list_country.append(t)
 
     list_country=list(set(list_country))
-##    if len(list_country)==2:
-##        denom+=1
-##        if outer_dict.has_key(yearf):
-##            inner=outer_dict[yearf]
-##            flag1=0
-##            flag2=0
-##            flag3=0
-##            for k,v in inner.iteritems():
-##                tm=k.split(',')
-##                if str(list_country[0]) in tm and str(list_country[1]) in tm:
-##                    inner[k]+=1
-##                    flag3=1
-##
-##            if flag3==0:
-##                co=','.join(list_country)
-##                inner[co]=1
-##                outer_dict[yearf]=inner
-##            
-##        else:
-##            dictt=dict()
-##            co=','.join(list_country)
-##            dictt[co]=1
-##            outer_dict[yearf]=dictt
 
     if len(list_country)>1:
         outer_count=0

@@ -1,15 +1,15 @@
 library(calibrate)
 
-mypath <- ("C:\\Python27\\final_mengproject\\data\\F1_F2_indicator\\plots\\")
+mypath <- ("/Users/theresavelden/Networks/StudentProjects/git/geomaps-project-files/geomaps/data/F1_F2_indicator/plots/")
 year <- c(1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010)
-firstfile <-("C:\\Python27\\final_mengproject\\data\\F1_F2_indicator\\plots\\0.csv")
+firstfile <-("/Users/theresavelden/Networks/StudentProjects/git/geomaps-project-files/geomaps/data/F1_F2_indicator/plots/0.csv")
 
 values <- read.csv(firstfile)
 
 values <- values$CNT
 
-label1
-label2
+#label1
+#label2
 plot(year,values,type="o", col="orange", axes= FALSE, ylim = c(0,15000), lwd=2)
 axis(1, at = year)
 axis(2)

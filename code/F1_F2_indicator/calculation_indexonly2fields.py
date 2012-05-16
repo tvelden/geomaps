@@ -7,13 +7,13 @@ fieldcount=0
 cluster=0
 for name in names:
     fieldcount+=1
-    filename=sys.argv[1] +'//'+ name + "/Rao_indicator_full_field/filecitiescount"
+    filename=sys.argv[1] + name + "/Rao_indicator_full_field/filecitiescount"
     print filename 
     year=1991
     dict1=dict()
     for t in range(0,20):
         count_of_documents=0
-        with open(sys.argv[2]+'//'+str(fieldcount)+".csv",'rb') as f:
+        with open(sys.argv[2] + "/" + str(fieldcount)+".csv",'rb') as f:
            reader=csv.reader(f)
            for row in reader:
                row=row[4].split(' ')
@@ -70,7 +70,7 @@ for name in names:
     index=list()
     years=list()
     path = sys.argv[3]
-    with open(path+'//'+str(cluster)+".csv",'wb') as fw:
+    with open(path+"/" +str(cluster)+".csv",'wb') as fw:
         print path+str(cluster)+".csv"
         cluster+=1
 

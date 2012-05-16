@@ -6,7 +6,7 @@ library(shape)
 library(rgdal)
 library(animation)
 
-mypath <- ("C:\\Python27\\final_mengproject\\data\\F1\\full_temporal\\")
+mypath <- ("/Users/theresavelden/Networks/StudentProjects/git/geomaps-project-files/geomaps/data/F1/full_temporal/")
 oopt = ani.options(outdir = getwd(),interval = 0.2, nmax = 50, ani.dev = png, ani.type = "png",
     ani.height = 700, ani.width = 700,
     title = "Mapping Scientific Networks-Geographic Overlay Maps",
